@@ -10,7 +10,7 @@ if [[ "$HOME" != /root ]]; then
 fi
 
 set -x
-sudo snap install --classic go
+snap install --classic go
 go get github.com/prometheus/node_exporter
 cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
 make
