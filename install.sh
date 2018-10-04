@@ -13,7 +13,7 @@ set -x
 snap install --classic go
 /snap/bin/go get github.com/prometheus/node_exporter
 cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
-make
+make build
 
 cp $HERE/machine-metrics.service $TARGET
 sed -i "s:__PATH__:$HERE:g" $TARGET
