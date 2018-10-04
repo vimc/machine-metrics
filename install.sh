@@ -20,6 +20,7 @@ cp $HERE/run.sh /usr/local/bin/machine-metrics-exporter
 cp $HERE/machine-metrics.service $TARGET
 sed -i "s:__PATH__:$HERE:g" $TARGET
 systemctl enable machine-metrics
+systemctl start machine-metrics
 
 set +x
 echo ""
