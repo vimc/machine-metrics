@@ -11,4 +11,4 @@ You can then control the service as per a normal systemd service, i.e.
 
 * `sudo systemctl [start|stop|enable|disable] machine-metrics.service`
 * `systemctl status machine-metrics.service`
-* `sudo journalctl --unit montagu-staging`
+* `sudo journalctl --unit machine-metrics`

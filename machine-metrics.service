@@ -7,6 +7,5 @@ After=network-online.target
 WantedBy=multi-user.target
 
 [Service]
-WorkingDirectory=__PATH__
-ExecStart=__PATH__/run.sh
+ExecStart=/usr/local/bin/machine-metrics-exporter
 Type=simple
