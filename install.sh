@@ -11,7 +11,7 @@ fi
 
 set -x
 snap install --classic go
-/snap/bin/go get github.com/prometheus/node_exporter
+go get github.com/prometheus/node_exporter
 cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
 make build
 
