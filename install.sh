@@ -5,7 +5,7 @@ HERE=$(dirname $(realpath $0))
 TARGET=/etc/systemd/system/machine-metrics.service
 
 if [[ "$HOME" != /root ]]; then
-    echo "Run with sudo -H ./install.sh"
+    echo "Run with sudo -H ./install.sh (home was $HOME)"
     exit 1;
 fi
 
