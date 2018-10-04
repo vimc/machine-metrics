@@ -1,0 +1,12 @@
+[Unit]
+Description=Prometheus Node Metrics Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+WorkingDirectory=__PATH__
+ExecStart=__PATH__/run.sh
+Type=simple
