@@ -11,6 +11,7 @@ fi
 
 set -x
 snap install --classic go
+export GO111MODULE=off
 go get github.com/godbus/dbus
 go get github.com/prometheus/node_exporter
 cd ${GOPATH-$HOME/go}/src/github.com/prometheus/node_exporter
